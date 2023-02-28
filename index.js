@@ -66,7 +66,6 @@ function showTimeUpDialog() {
 
 
 function hideDialog() {
-//     document.getElementById("overlay").style.display = "none";
     document.getElementById("dialog").style.display = "none";
     document.getElementById("hours").disabled = false;
     document.getElementById("minutes").disabled = false;
