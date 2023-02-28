@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="mainheading">
+
+        <h1>Timer app</h1>
+    </div>
+
+
+    <div class="inputgr">
+        <div class="timers">
+            <label for="hours">Hrs</label>
+            <input type="number" id="hours" min="0" max="23" value="0">
+
+        </div>
+        <div class="timers">
+            <label for="minutes">Min</label>
+            <input type="number" id="minutes" min="0" max="59" value="0">
+
+        </div>
+        <div class="timers">
+            <label for="seconds">Sec</label>
+            <input type="number" id="seconds" min="0" max="59" value="0" value="0">
+        </div>
+    </div>
+
+    <button class="button" onclick="startTimer()">Start</button>
+
+    <button id="timerst" onclick="stopTimer()">Stop</button>
+
+
+    <div class="timer" id="timer">Go ahead and set the timer</div>
+
+    <div class="overlay" id="overlay" style="display: none;"></div>
+    <div class="dialog" id="dialog" style="display: none;">
+
+        <h2>Time's up!</h2>
+        <button class="button" onclick="hideDialog()">OK</button>
+        <audio src="success.mp3" id="audio"></audio>
+    </div>
+
+
+
+
+
+
+
+
+
+
+    <script src="index.js"></script>
+</body>
+
+</html>

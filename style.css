@@ -1,0 +1,83 @@
+    @import url('https://fonts.googleapis.com/css2?family=Moon+Dance&display=swap');
+    * {
+        margin: 0px;
+        padding: 0px;
+        /* display: flex; */
+    }
+    
+    body {
+        background-color: rgb(208, 192, 190);
+    }
+    
+    .mainheading {
+        display: flex;
+        justify-content: center;
+    }
+    
+    h1 {
+        font-family: 'Moon Dance';
+        font-size: 50px;
+    }
+    
+    .inputgr {
+        background-color: rgb(207, 184, 203);
+        display: grid;
+        border: 0.1px solid black;
+        height: 70vh;
+        width: 8.5rem;
+    }
+    
+    input {
+        width: 100px;
+    }
+    
+    .timers {
+        position: relative;
+        top: 50px;
+    }
+    
+    .button,
+    #timerst {
+        position: relative;
+        background-color: #4CAF50;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        /* left: 20rem;
+        bottom: 13rem; */
+    }
+    
+    .button:hover {
+        cursor: pointer;
+        background-color: #3e8e41;
+    }
+    
+    .timer {
+        display: flex;
+        position: absolute;
+        justify-content: center;
+        align-items: center;
+        left: 30%;
+        bottom: 50%;
+        height: 30%;
+        width: 50%;
+        background-color: aliceblue;
+        /* border: 1px solid red; */
+        font-size: 36px;
+        text-align: center;
+        margin-top: 20px;
+    }
+    
+    .dialog {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        padding: 20px;
+        background-color: white;
+        border: 1px solid black;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        z-index: 999;
+    }
